@@ -38,3 +38,12 @@
 }
 
 html, body { height: 100%; height: 100dvh; }
+
+@theme {
+  --animate-phone: phone 7s ease-in-out infinite;
+
+  @keyframes phone {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+}

@@ -15,8 +15,60 @@
 <body class="min-h-screen overflow-hidden bg-navy text-white antialiased">
 
   <!-- Page behind the overlay -->
-<main class="fixed inset-0 bg-navy">
+<!-- <main class="fixed inset-0 bg-navy">
   <img src="./assets/hero.png" alt="Junuvo Internet Banking" class="h-full w-full object-cover object-[70%_center] sm:object-top" />
+</main> -->
+
+<!-- Page behind the overlay -->
+<main class="fixed inset-0 overflow-hidden bg-navy">
+  <img src="./assets/hero.png" alt="Junuvo Internet Banking" class="h-full w-full object-cover object-[70%_center] sm:object-top" />
+  <div class="absolute inset-0 bg-navy/50"></div>
+  <div class="absolute left-1/2 top-1/2 h-[28rem] w-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand/30 blur-[120px]"></div>
+
+  <!-- App screenshots -->
+  <div aria-hidden="true" class="absolute inset-0 flex items-center justify-center gap-2 px-2 sm:gap-4 lg:gap-7">
+
+    <div class="hidden translate-y-12 rotate-[-9deg] sm:block">
+      <div class="animate-phone relative aspect-[485/1080] w-24 overflow-hidden rounded-[1.5rem] border-[5px] border-[#0a1224] bg-[#0a1224] shadow-[0_30px_60px_-10px_rgba(0,0,0,0.75),0_0_40px_rgba(11,92,255,0.35)] ring-1 ring-white/30 [animation-delay:-3s] sm:w-28 lg:w-40 lg:rounded-[2rem]">
+        <img src="./assets/app1.png" alt="" loading="lazy" class="h-full w-full object-cover object-top" />
+        <span class="absolute left-1/2 top-1.5 h-1.5 w-8 -translate-x-1/2 rounded-full bg-black/80"></span>
+        <span class="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/25 via-transparent to-transparent"></span>
+      </div>
+    </div>
+
+    <div class="-translate-y-6 rotate-[-4deg]">
+      <div class="animate-phone relative aspect-[485/1080] w-28 overflow-hidden rounded-[1.5rem] border-[5px] border-[#0a1224] bg-[#0a1224] shadow-[0_30px_60px_-10px_rgba(0,0,0,0.75),0_0_40px_rgba(11,92,255,0.35)] ring-1 ring-white/30 [animation-delay:-2s] sm:w-32 lg:w-44 lg:rounded-[2rem]">
+        <img src="./assets/app2.png" alt="" loading="lazy" class="h-full w-full object-cover object-top" />
+        <span class="absolute left-1/2 top-1.5 h-1.5 w-8 -translate-x-1/2 rounded-full bg-black/80"></span>
+        <span class="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/25 via-transparent to-transparent"></span>
+      </div>
+    </div>
+
+    <div class="translate-y-6">
+      <div class="animate-phone relative aspect-[485/1080] w-32 overflow-hidden rounded-[1.7rem] border-[5px] border-[#0a1224] bg-[#0a1224] shadow-[0_40px_80px_-10px_rgba(0,0,0,0.8),0_0_60px_rgba(11,92,255,0.5)] ring-1 ring-white/40 sm:w-36 lg:w-52 lg:rounded-[2.4rem]">
+        <img src="./assets/app3.png" alt="" loading="lazy" class="h-full w-full object-cover object-top" />
+        <span class="absolute left-1/2 top-1.5 h-1.5 w-9 -translate-x-1/2 rounded-full bg-black/80"></span>
+        <span class="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/25 via-transparent to-transparent"></span>
+      </div>
+    </div>
+
+    <div class="-translate-y-6 rotate-[4deg]">
+      <div class="animate-phone relative aspect-[485/1080] w-28 overflow-hidden rounded-[1.5rem] border-[5px] border-[#0a1224] bg-[#0a1224] shadow-[0_30px_60px_-10px_rgba(0,0,0,0.75),0_0_40px_rgba(11,92,255,0.35)] ring-1 ring-white/30 [animation-delay:-1s] sm:w-32 lg:w-44 lg:rounded-[2rem]">
+        <img src="./assets/app4.png" alt="" loading="lazy" class="h-full w-full object-cover object-top" />
+        <span class="absolute left-1/2 top-1.5 h-1.5 w-8 -translate-x-1/2 rounded-full bg-black/80"></span>
+        <span class="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/25 via-transparent to-transparent"></span>
+      </div>
+    </div>
+
+    <div class="hidden translate-y-12 rotate-[9deg] sm:block">
+      <div class="animate-phone relative aspect-[485/1080] w-24 overflow-hidden rounded-[1.5rem] border-[5px] border-[#0a1224] bg-[#0a1224] shadow-[0_30px_60px_-10px_rgba(0,0,0,0.75),0_0_40px_rgba(11,92,255,0.35)] ring-1 ring-white/30 [animation-delay:-4s] sm:w-28 lg:w-40 lg:rounded-[2rem]">
+        <img src="./assets/app5.png" alt="" loading="lazy" class="h-full w-full object-cover object-top" />
+        <span class="absolute left-1/2 top-1.5 h-1.5 w-8 -translate-x-1/2 rounded-full bg-black/80"></span>
+        <span class="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/25 via-transparent to-transparent"></span>
+      </div>
+    </div>
+
+  </div>
 </main>
 
   <!-- Coming soon overlay -->
@@ -25,14 +77,14 @@
     role="dialog"
     aria-modal="true"
     aria-labelledby="cs-title"
-     class="fixed inset-0 z-50 overflow-y-auto bg-navy/20 backdrop-blur-[6px] transition-opacity duration-700"
+     class="fixed inset-0 z-50 overflow-y-auto bg-navy/10 backdrop-blur-[1px] transition-opacity duration-700"
   >
     <!-- Glow and readability layers -->
     <div aria-hidden="true" class="pointer-events-none fixed inset-0 overflow-hidden">
       <div class="animate-float absolute -left-24 top-10 h-96 w-96 rounded-full bg-brand/15 blur-3xl"></div>
       <div class="animate-float-slow absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-accent/10 blur-3xl"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(3,26,69,0.55)_0%,rgba(3,26,69,0.2)_50%,rgba(3,26,69,0)_100%)]"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-navy/40 via-transparent to-navy/50"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(3,26,69,0.3)_0%,rgba(3,26,69,0.12)_50%,rgba(3,26,69,0)_100%)]"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-navy/20 via-transparent to-navy/30"></div>
     </div>
 
     <!-- Scroll-safe centering wrapper -->
@@ -63,7 +115,7 @@
           </span>
         </h1>
 
-        <p class="animate-fade-up mx-auto mt-4 max-w-xl text-lg font-bold leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(3,26,69,0.9)] [animation-delay:300ms] sm:text-base">
+        <p class="animate-fade-up mx-auto mt-4 max-w-xl text-base font-black leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(3,26,69,0.9)] [animation-delay:300ms] sm:text-lg">
           Internet Banking |  Mobile App | Core Banking Application | Agency Banking | Thrift Collector | Field Officer App
         </p>
 
